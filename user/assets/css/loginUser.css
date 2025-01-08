@@ -1,0 +1,36 @@
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0aec0;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-field {
+  padding-left: 40px;
+}
+
+.form-transition {
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  opacity: 0;
+  transform: translateY(10px);
+  display: none;
+}
+
+.form-transition-active {
+  opacity: 1;
+  transform: translateY(0);
+  display: block;
+}
+
+body {
+  background-image: url("../../../admin/assets/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
