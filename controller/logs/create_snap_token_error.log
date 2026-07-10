@@ -1,0 +1,92 @@
+    [2025-12-10 14:29:20] Incoming POST: {"id_pesanan":"72","id_user":"19","total_bayar":"35000","nama":"daeng"}
+    [2025-12-10 14:29:20] UNCAUGHT EXCEPTION: Column 'tanggal_pembayaran' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(155): mysqli_stmt->execute()
+    #1 {main}
+    [2025-12-10 14:33:54] Incoming POST: {"id_pesanan":"72","id_user":"19","total_bayar":"35000","nama":"daeng"}
+    [2025-12-10 14:33:54] UNCAUGHT EXCEPTION: Column 'snap_token' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(151): mysqli_stmt->execute()
+    #1 {main}
+    [2025-12-10 14:34:47] Incoming POST: {"id_pesanan":"72","id_user":"19","total_bayar":"35000","nama":"daeng"}
+    [2025-12-10 14:34:47] UNCAUGHT EXCEPTION: Column 'snap_token' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(151): mysqli_stmt->execute()
+    #1 {main}
+    [2025-12-10 14:36:34] Incoming POST: {"id_pesanan":"72","id_user":"19","total_bayar":"35000","nama":"daeng"}
+    [2025-12-10 14:36:34] UNCAUGHT EXCEPTION: Column 'transaksi_id_midtrans' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(141): mysqli_stmt->execute()
+    #1 {main}
+    [2025-12-10 14:37:58] Incoming POST: {"id_pesanan":"72","id_user":"19","total_bayar":"35000","nama":"daeng"}
+    [2025-12-10 14:37:58] UNCAUGHT EXCEPTION: Call to undefined function Midtrans\curl_init()
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\vendor\midtrans\midtrans-php\Midtrans\ApiRequestor.php(39): Midtrans\ApiRequestor::remoteCall('https://app.san...', 'SB-Mid-server-F...', Array, 'POST')
+    #1 C:\laragon\www\AplikasiKonsentrasi\vendor\midtrans\midtrans-php\Midtrans\Snap.php(108): Midtrans\ApiRequestor::post('https://app.san...', 'SB-Mid-server-F...', Array)
+    #2 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(178): Midtrans\Snap::createTransaction(Array)
+    #3 {main}
+    [2025-12-10 14:38:31] Incoming POST: {"id_pesanan":"72","id_user":"19","total_bayar":"35000","nama":"daeng"}
+    [2025-12-10 14:38:31] UNCAUGHT EXCEPTION: Class "mysqli" not found
+    TRACE: #0 {main}
+    [2025-12-10 14:41:31] Incoming POST: {"id_pesanan":"73","id_user":"19","total_bayar":"85000","nama":"daeng"}
+    [2025-12-10 14:41:31] UNCAUGHT EXCEPTION: Column 'transaksi_id_midtrans' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(141): mysqli_stmt->execute()
+    #1 {main}
+    [2025-12-10 14:44:38] Incoming POST: {"id_pesanan":"73","id_user":"19","total_bayar":"85000","nama":"daeng"}
+    [2025-12-10 14:44:38] UNCAUGHT EXCEPTION: Column 'transaksi_id_midtrans' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(141): mysqli_stmt->execute()
+    #1 {main}
+    [2025-12-10 14:45:47] Incoming POST: {"id_pesanan":"73","id_user":"19","total_bayar":"85000","nama":"daeng"}
+    [2025-12-10 14:45:47] UNCAUGHT EXCEPTION: Column 'transaksi_id_midtrans' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(141): mysqli_stmt->execute()
+    #1 {main}
+    [2025-12-10 14:46:11] Incoming POST: {"id_pesanan":"72","id_user":"19","total_bayar":"35000","nama":"daeng"}
+    [2025-12-10 14:46:11] UNCAUGHT EXCEPTION: Column 'transaksi_id_midtrans' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(141): mysqli_stmt->execute()
+    #1 {main}
+    [2025-12-10 14:46:26] Incoming POST: {"id_pesanan":"73","id_user":"19","total_bayar":"85000","nama":"daeng"}
+    [2025-12-10 14:46:26] UNCAUGHT EXCEPTION: Column 'transaksi_id_midtrans' cannot be null
+    TRACE: #0 C:\laragon\www\AplikasiKonsentrasi\controller\create_snap_token.php(141): mysqli_stmt->execute()
+    #1 {main}
+[2025-12-10 14:52:20] Incoming POST: {"id_pesanan":"73","id_user":"19","total_bayar":"85000","nama":"daeng","email":""}
+[2025-12-10 14:52:21] MIDTRANS EXCEPTION: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["customer_details.email format is invalid"]}
+PARAMS: {"transaction_details":{"order_id":"INV-73-1765378340","gross_amount":85000},"item_details":[{"id":73,"price":85000,"quantity":1,"name":"Pembayaran #73"}],"customer_details":{"first_name":"daeng","email":"","phone":null}}
+[2025-12-10 14:55:35] Incoming POST: {"id_pesanan":"73","id_user":"19","total_bayar":"85000","nama":"daeng","email":""}
+[2025-12-10 14:55:35] MIDTRANS EXCEPTION: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["customer_details.email format is invalid"]}
+PARAMS: {"transaction_details":{"order_id":"INV-73-1765378535","gross_amount":85000},"item_details":[{"id":73,"price":85000,"quantity":1,"name":"Pembayaran #73"}],"customer_details":{"first_name":"daeng","email":"","phone":null}}
+[2025-12-10 14:57:08] Incoming POST: {"id_pesanan":"73","id_user":"19","total_bayar":"85000","nama":"daeng","email":""}
+[2025-12-10 14:57:08] MIDTRANS EXCEPTION: Midtrans API is returning API error. HTTP status code: 400 API response: {"error_messages":["item_details Price is required","item_details Price is not a number","transaction_details.gross_amount must be greater than or equal to 0.01","transaction_details.order_id is required","transaction_details.gross_amount is not equal to the sum of item_details"]}
+PARAMS: {"transaction_details":{"order_id":null,"gross_amount":null},"item_details":[{"id":"ITEM-","price":null,"quantity":1,"name":"Pembayaran #"}],"customer_details":{"first_name":"daeng"}}
+[2025-12-10 14:57:52] Incoming POST: {"id_pesanan":"73","id_user":"19","total_bayar":"85000","nama":"daeng","email":""}
+[2025-12-10 15:01:58] Incoming POST: {"id_pesanan":"74","id_user":"19","total_bayar":"170000","nama":"daeng","email":""}
+[2025-12-10 15:08:03] Incoming POST: {"id_pesanan":"75","id_user":"19","total_bayar":"70000","nama":"daeng","email":""}
+[2025-12-10 15:14:27] Incoming POST: {"id_pesanan":"76","id_user":"19","total_bayar":"150000","nama":"daeng","email":""}
+[2025-12-10 15:19:06] Incoming POST: {"id_pesanan":"77","id_user":"19","total_bayar":"170000","nama":"daeng","email":""}
+[2025-12-10 15:27:18] Incoming POST: {"id_pesanan":"78","id_user":"19","total_bayar":"100000","nama":"daeng","email":""}
+[2026-05-07 19:52:43] Incoming POST: {"id_pesanan":"70","id_user":"19","total_bayar":"85000","nama":"Oca","email":"akutampan@gmail.com"}
+[2026-05-07 19:52:43] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-05-07 19:52:47] Incoming POST: {"id_pesanan":"70","id_user":"19","total_bayar":"85000","nama":"Oca","email":"akutampan@gmail.com"}
+[2026-05-07 19:52:47] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-07-10 09:37:23] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 09:37:23] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-07-10 09:40:27] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 09:40:27] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-07-10 09:40:51] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 09:40:51] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-07-10 09:41:42] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 09:41:42] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-07-10 09:43:52] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 09:43:52] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-07-10 10:05:02] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:05:02] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-07-10 10:22:37] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:22:37] PHP cURL extension is not enabled. Enable php_curl in php.ini and restart web server.
+[2026-07-10 10:26:55] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:27:00] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:34:28] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:34:32] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:35:18] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:36:04] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:36:13] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:36:47] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:39:38] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:39:48] Incoming POST: {"id_pesanan":"71","id_user":"20","total_bayar":"100000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:40:25] Incoming POST: {"id_pesanan":"72","id_user":"20","total_bayar":"85000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:41:43] Incoming POST: {"id_pesanan":"72","id_user":"20","total_bayar":"85000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:42:09] Incoming POST: {"id_pesanan":"72","id_user":"20","total_bayar":"85000","nama":"padila","email":"padila@test.com"}
+[2026-07-10 10:44:17] Incoming POST: {"id_pesanan":"73","id_user":"20","total_bayar":"105000","nama":"padila","email":"padila@test.com"}

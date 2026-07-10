@@ -106,7 +106,7 @@ include '../controller/CrudPembayaran.php';
                                                     <th scope="col">Total Bayar</th>
                                                     <th scope="col">Tanggal Bayar</th>
                                                     <th scope="col">Metode Pembayaran</th>
-                                                    <th scope="col">Bukti Pembayaran</th>
+                                                    <th scope="col">Kode Transaksi</th>
                                                     <th scope="col" class="text-center">Aksi</th>
                                                 </tr>
                                             </thead>
@@ -114,7 +114,7 @@ include '../controller/CrudPembayaran.php';
                                             <tbody>
                                                 <?php
                                                 // Default query
-                                                $pembayaranSql = "SELECT tb_pembayaran.id_pesanan, tb_user.nama, tb_pembayaran.status_pembayaran, tb_pembayaran.total_bayar, tb_pembayaran.tanggal_pembayaran, tb_pembayaran.metode_pembayaran, tb_pembayaran.bukti_pembayaran FROM tb_pembayaran JOIN tb_user ON tb_pembayaran.id_user = tb_user.id_user";
+                                                $pembayaranSql = "SELECT tb_pembayaran.id_pesanan, tb_user.nama, tb_pembayaran.status_pembayaran, tb_pembayaran.total_bayar, tb_pembayaran.tanggal_pembayaran, tb_pembayaran.metode_pembayaran, tb_pembayaran.transaksi_id_midtrans FROM tb_pembayaran JOIN tb_user ON tb_pembayaran.id_user = tb_user.id_user";
 
                                                 // Tambahkan filter tanggal jika disediakan
                                                 if (!empty($_GET['start_date']) && !empty($_GET['end_date'])) {
@@ -138,7 +138,7 @@ include '../controller/CrudPembayaran.php';
                                                         $total_bayar = $pembayaranData['total_bayar'];
                                                         $tanggal_bayar = $pembayaranData['tanggal_pembayaran'];
                                                         $metode_pembayaran = $pembayaranData['metode_pembayaran'];
-                                                        $bukti_pembayaran = $pembayaranData['bukti_pembayaran'];
+                                                        $transaksi_id_midtrans = $pembayaranData['transaksi_id_midtrans'];
                                                 ?>
                                                         <tr>
                                                             <td><?= $pembayaranCount++ ?></td>
@@ -147,13 +147,7 @@ include '../controller/CrudPembayaran.php';
                                                             <td>Rp. <?= $total_bayar ?></td>
                                                             <td><?= $tanggal_bayar ?></td>
                                                             <td><?= $metode_pembayaran ?></td>
-                                                            <td>
-                                                                <?php if ($bukti_pembayaran): ?>
-                                                                    <a href="assets/img/buktiPembayaran/<?= $bukti_pembayaran ?>" target="_blank">Lihat Bukti</a>
-                                                                <?php else: ?>
-                                                                    Tidak ada bukti
-                                                                <?php endif; ?>
-                                                            </td>
+                                                            <td><?= $transaksi_id_midtrans ?></td>
                                                             <td>
                                                                 <div class="form-button-action">
                                                                     <!-- Modal for Edit Payment -->

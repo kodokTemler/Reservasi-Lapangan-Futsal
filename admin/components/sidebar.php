@@ -8,7 +8,7 @@ if (!isset($_SESSION['name'])) {
 
 $active = 'dashboard';
 // Memastikan bahwa $_GET['active'] aman dari XSS dengan htmlspecialchars dan validasinya dengan in_array
-if (isset($_GET['active']) && in_array($_GET['active'], ['admin', 'user', 'lapangan', 'pemesanan', 'pembayaran', 'ulasan', 'buku'])) {
+if (isset($_GET['active']) && in_array($_GET['active'], ['admin', 'user', 'lapangan', 'pemesanan', 'pembayaran', 'ulasan'])) {
     $active = htmlspecialchars($_GET['active']);
 }
 ?>
@@ -88,12 +88,6 @@ if (isset($_GET['active']) && in_array($_GET['active'], ['admin', 'user', 'lapan
                     <a href="ulasan.php?active=ulasan">
                         <i class="fas fa-inbox"></i>
                         <p>Daftar Ulasan</p>
-                    </a>
-                </li>
-                <li class="nav-item <?= $active == 'buku' ? 'active' : '' ?>">
-                    <a href="buku.php?active=buku">
-                        <i class="fas fa-book"></i>
-                        <p>Buku</p>
                     </a>
                 </li>
             </ul>
