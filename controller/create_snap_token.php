@@ -53,8 +53,8 @@ if (!class_exists('mysqli')) {
 }
 
 // MIDTRANS CONFIG - sesuaikan serverKey/clientKey jika perlu
-\Midtrans\Config::$serverKey = '##YOUR_SERVER_KEY##';
-\Midtrans\Config::$clientKey = '##YOUR_CLIENT_KEY##';
+\Midtrans\Config::$serverKey = 'SB-Mid-server-FZ1_nmdIZR8w5wnMDoRfHQCX';
+\Midtrans\Config::$clientKey = 'SB-Mid-client-1e1cQp3TBnL_xbTF';
 \Midtrans\Config::$isProduction = false;
 \Midtrans\Config::$isSanitized = true;
 \Midtrans\Config::$is3ds = true;

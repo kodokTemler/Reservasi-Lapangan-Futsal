@@ -29,8 +29,8 @@ if (isset($_POST['daftarUser'])) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.mailtrap.io';
         $mail->SMTPAuth   = true;
-        $mail->Username   = '#'; // ganti dengan username Mailtrap
-        $mail->Password   = '#'; // ganti dengan password Mailtrap
+        $mail->Username   = 'd883f960e68917'; // ganti dengan username Mailtrap
+        $mail->Password   = 'ec2e8889827ef9'; // ganti dengan password Mailtrap
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port       = 2525;
 
