@@ -6,7 +6,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // MIDTRANS CONFIG - sesuaikan jika perlu
-\Midtrans\Config::$serverKey = 'SB-Mid-server-FZ1_nmdIZR8w5wnMDoRfHQCX';
+\Midtrans\Config::$serverKey = '#';
 \Midtrans\Config::$isProduction = false;
 
 header('Content-Type: application/json');
